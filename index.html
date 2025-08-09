@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Immah's Interests and Research Form</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header id="main-header">
+    <h1>Welcome to Immah's Personal Page</h1>
+    <p>This page shares my academic background, hobbies, and a form for research collaboration requests.</p>
+    <!-- Interactive feature 1: Theme toggle button -->
+    <button id="theme-toggle">Toggle Theme</button>
+  </header>
+
+  <main>
+    <!-- ANIMATION DEMONSTRATION SECTION -->
+    <section id="animation-demo">
+      <h2>Interactive Animations</h2>
+      <button id="bounce-btn">Bounce Animation</button>
+      <button id="pulse-btn">Pulse Animation</button>
+      <button id="slide-btn">Slide Animation</button>
+      <div id="animated-box"></div>
+    </section>
+
+    <section id="hobbies-section">
+      <h2>My Hobbies</h2>
+      <ul id="hobbies-list">
+        <li>Exploring forest ecosystems</li>
+        <li>Programming with Python and R</li>
+        <li>Creating educational platforms</li>
+        <li>Reading scientific articles</li>
+        <li>Editing videos for learning</li>
+      </ul>
+
+      <h3>Daily Routine (When Not in the Lab)</h3>
+      <ol id="routine-list">
+        <li>Wake up and stretch</li>
+        <li>Morning forest walk</li>
+        <li>Online course work or research</li>
+        <li>Barber shop service (weekends)</li>
+        <li>Evening gym or relaxing music</li>
+      </ol>
+      
+      <!-- Interactive feature 2: Progress tracker -->
+      <div id="progress-tracker">
+        <h3>Daily Progress Tracker</h3>
+        <button id="add-task">Add Task</button>
+        <ul id="task-list"></ul>
+        <input type="text" id="new-task" placeholder="Enter new task...">
+      </div>
+    </section>
+
+    <section>
+      <h2>My Academic Timeline</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Year</th>
+            <th>Institution</th>
+            <th>Field of Study</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>2015 - 2018</td>
+            <td>Sokoine University of Agriculture</td>
+            <td>Forestry</td>
+          </tr>
+          <tr>
+            <td>2022 - Present</td>
+            <td>Chinese Academy of Forestry</td>
+            <td>Forestry Genetics & Breeding</td>
+          </tr>
+          <tr>
+            <td>2024 - Ongoing</td>
+            <td>Self-Paced</td>
+            <td>Data Science & Web Development</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Photos from the Field</h2>
+      <img src="forest-lab.jpg" alt="Immah working in forest lab" width="500" />
+
+      <h3>Background Sound from Forest</h3>
+      <audio controls>
+        <source src="forest-sounds.mp3" type="audio/mpeg" />
+        Your browser does not support the audio tag.
+      </audio>
+    </section>
+
+    <!-- Section 4: HTML5 Form -->
+    <section>
+      <h2>Research Collaboration Request</h2>
+      <form id="research-form" action="#" method="post" autocomplete="on">
+        <fieldset>
+          <legend>Personal Information</legend>
+
+          <label for="fname">First Name:</label>
+          <input type="text" id="fname" name="fname" placeholder="Your first name" />
+          <span class="error-message" id="fname-error"></span>
+
+          <label for="lname">Last Name:</label>
+          <input type="text" id="lname" name="lname" placeholder="Your last name" />
+          <span class="error-message" id="lname-error"></span>
+
+          <label for="email">Email Address:</label>
+          <input type="text" id="email" name="email" placeholder="example@domain.com" />
+          <span class="error-message" id="email-error"></span>
+
+          <label for="institution">Institution:</label>
+          <input type="text" id="institution" name="institution" placeholder="e.g., Nairobi University" />
+        </fieldset>
+
+        <fieldset>
+          <legend>Project Details</legend>
+
+          <label for="research-topic">Research Topic:</label>
+          <input type="text" id="research-topic" name="research-topic" placeholder="Your research area" />
+          <span class="error-message" id="topic-error"></span>
+
+          <label for="field">Field of Interest:</label>
+          <select id="field" name="field">
+            <option value="">--Select--</option>
+            <option value="forestry">Forestry</option>
+            <option value="genetics">Genetics</option>
+            <option value="remote-sensing">Remote Sensing</option>
+            <option value="data-analysis">Data Analysis</option>
+            <option value="education">Education</option>
+          </select>
+          <span class="error-message" id="field-error"></span>
+
+          <label for="message">Collaboration Message:</label>
+          <textarea id="message" name="message" rows="4" placeholder="Tell me about your idea..."></textarea>
+          <span class="error-message" id="message-error"></span>
+
+          <label><input type="checkbox" id="agree" name="agree" /> I confirm this is for academic collaboration</label>
+          <span class="error-message" id="agree-error"></span>
+        </fieldset>
+
+        <button type="submit">Submit Request</button>
+        <button type="reset" id="reset-btn">Reset</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Immah | Forestry & Data Science Enthusiast</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
